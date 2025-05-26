@@ -1,0 +1,188 @@
+.contact {
+  margin-left: 130px;
+  margin-bottom: 60px;
+  padding-top: 50px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.card0 {
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.card0:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 15px 35px -5px rgba(0, 0, 0, 0.4);
+}
+
+.card2 {
+  margin: 0px 40px;
+  background: white;
+  border-radius: 15px;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+}
+
+.card1 .image {
+  padding: 30px;
+  margin-top: 30px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.5s ease;
+}
+
+.card1 .image:hover {
+  transform: scale(1.03);
+}
+
+.social-header {
+  color: #1e1e2c;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.contact-stickers {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  align-items: center;
+}
+
+.sticker-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 250px;
+  padding: 15px 25px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.sticker-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.sticker-label {
+  font-size: 1.2rem;
+  color: #1e1e2c;
+  font-weight: 500;
+  flex-grow: 1;
+  text-align: left;
+}
+
+/* Email Icon */
+.sticker-item:nth-child(1) .social-icon {
+  background-color: #EA4335; /* Gmail red */
+  color: white;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* GitHub Icon */
+.sticker-item:nth-child(2) .social-icon {
+  background-color: #333; /* GitHub black */
+  color: white;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* LinkedIn Icon */
+.sticker-item:nth-child(3) .social-icon {
+  background-color: #0A66C2; /* LinkedIn blue */
+  color: white;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon {
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Make all links inherit styling */
+.sticker-item a {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Email item specific styling */
+.email-item {
+  cursor: pointer;
+}
+
+/* ======================== */
+@media (max-width: 768px) {
+  .contact {
+    margin-left: 0;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .card2 {
+    margin: 0 20px;
+    padding: 30px 15px;
+    min-height: 300px;
+  }
+  
+  .card1 .image {
+    padding: 15px;
+    margin-top: 15px;
+  }
+  
+  .social-header {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+  }
+  
+  .contact-stickers {
+    gap: 20px;
+  }
+  
+  .sticker-item {
+    max-width: 100%;
+    padding: 12px 20px;
+    gap: 15px;
+  }
+  
+  .sticker-label {
+    font-size: 1.1rem;
+  }
+}
